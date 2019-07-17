@@ -67,7 +67,8 @@ header{
   	padding-top: 0px;
 	margin-top: 50px;
 	margin-left: 50px;
-	background-color: rgba(0,0,0,0.5)
+	background-color: rgba(0,0,0,0.5);
+	font-family: "Times New Roman", Georgia, serif;
 }
 
 .lastname{
@@ -82,10 +83,9 @@ header{
   	width: -moz-max-content;    /* Firefox/Gecko */
   	width: -webkit-max-content; /* Chrome */	
 	font-size: 2rem;
-	font-style: italic; 
+	//font-style: italic; 
 	color:black;
 	line-height:2rem;
-	font-family: "Times New Roman", Georgia, serif;
 	background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0.5));
 }
 
@@ -105,15 +105,18 @@ li.menu {
 
 .main{
 	padding-top: 50px;
-	max-width: 800px;
 	padding: 10px 15 px;
 	margin: 0 auto;
+	max-width: 800px;
 }
 
 footer{
+	background-color: rgba(240,248,255, 0.4);
 	max-width: 800px;
 	padding: 10px 15 px;
 	margin: 0 auto;
+	padding-left: 100px;
+	clear: both;
 }
 
 // Publication PART :
@@ -150,4 +153,24 @@ li.pub{
 	color:	black;
 	padding: 0;
 	line-height: 1.2rem;
+}
+
+.strong{
+	font-weight: bold; 
+}
+
+.left{
+	float: left;
+}
+
+aside{
+	padding-top: 0;
+	padding-left: 20px;
+	min-width: 200px;
+	float: right;
+	background-color: rgba(240, 240, 240, 0.6);
+}
+
+.contact_content{
+	padding-left: 100px;
 }
