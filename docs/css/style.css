@@ -56,8 +56,9 @@ header{
 	color: white;
 	font-size: 2em;
 	margin: 0 auto;
-	//background-image: url('../images/SHC8.jpg');
-	background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,1)), url('../images/SHC8.jpg');
+	background-image: url('../images/SHC8.jpg');
+	//background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,1)), url('../images/SHC8.jpg');
+	background-position: center; 
 }
 
 .name{
@@ -65,6 +66,8 @@ header{
   	width: -moz-max-content;    /* Firefox/Gecko */
   	width: -webkit-max-content; /* Chrome */	
   	padding-top: 0px;
+  	padding-left: 10px;
+  	padding-right: 10px;
 	margin-top: 50px;
 	margin-left: 50px;
 	background-color: rgba(0,0,0,0.5);
@@ -77,6 +80,7 @@ header{
 }
 
 .description{
+  	padding-left: 5px;
 	margin-top: 30px;
   	margin-left: 50px;
   	width: intrinsic;           /* Safari/WebKit utilisent un nom non-standard */
@@ -92,20 +96,29 @@ header{
 
 
 ul.menu {
+	width:100%;
 	list-style-type: none;
  	margin: 0;
  	padding: 0;
  	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 li.menu {
-	float: left;
+	//float: left;
+	flex-grow:1;
   	padding: 14px 16px;
   	text-transform: uppercase;
 }
+li.menu:hover{
+	color: red;
+	font-weight: bold;
+}
 
 .main{
+	padding: 10px 15px;
 	padding-top: 50px;
-	padding: 10px 15 px;
 	margin: 0 auto;
 	max-width: 800px;
 }
@@ -127,7 +140,7 @@ li.pub{
 
 .title{
 	font-family: "Times New Roman", Georgia, serif;
-	margin-top: 2rem;
+	margin-top: 1rem;
 	font-weight: big; 
 	font-size: 1.2rem;
 	color: #000080; /* dark blue */
@@ -160,6 +173,7 @@ li.pub{
 }
 
 .left{
+	min-width: 70%;
 	float: left;
 }
 
@@ -172,5 +186,13 @@ aside{
 }
 
 .contact_content{
+	line-height: 1.2rem;
 	padding-left: 100px;
+}
+
+
+iframe{
+	margin: 20px;
+	width: 90%;
+	height: 300px;
 }
