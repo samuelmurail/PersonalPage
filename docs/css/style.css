@@ -33,32 +33,108 @@ h1, h2, h3, h4, h5, h6, figure
 
 /* Title */
 header{
-	height: 800px;
 	max-width: 1250px;
 	color: white;
 	margin: 0 auto;
-	background-image: url('../images/SHC8.jpg');
+	//background-image: url('../images/SHC8.jpg');
 	//background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,1)), url('../images/SHC8.jpg');
-	background-position: center; 
+	//background-position: center; 
 }
 
+/* Slideshow container */
+.slideshow-container {
+  	/*max-width: 1000px;*/
+  	/*position: relative;*/
+  	position: relative;
+  	margin: 0 auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  	display: none;
+  	text-align: center;
+  	position: relative;
+}
+
+img{
+	width: 100%;
+    height: 500px;
+	object-fit: cover;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.caption {
+  	position: absolute;
+  	bottom: 5%;
+  	right: 10%;
+	padding: 10px;
+  	background-color: rgba(0,0,0,0.5)
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
 .name{
+  	position: absolute;
+  	top: 5%;
+  	left: 5%;
+	font-size: 3rem;
   	//width: intrinsic;           /* Safari/WebKit utilisent un nom non-standard */
   	//width: -moz-max-content;    /* Firefox/Gecko */
   	//width: -webkit-max-content; /* Chrome */	
-	position: -webkit-sticky;
-	position: sticky;
+	//position: -webkit-sticky;
+	//position: sticky;
 	background-color: rgba(0,0,0,0.5);
-	font-family: "Times New Roman", Georgia, serif;
+	//font-family: "Times New Roman", Georgia, serif;
 }
 
 .description{
-	top: 10px;
+	margin-top: 20px;
   	//width: intrinsic;           /* Safari/WebKit utilisent un nom non-standard */
   	//width: -moz-max-content;    /* Firefox/Gecko */
   	//width: -webkit-max-content; /* Chrome */	
 	font-size: 2rem;
-	color:black;
+	//color:black;
 	line-height:2rem;
 	//background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0.5));
 }
