@@ -88,11 +88,17 @@ img{
 }
 
 .caption {
+	color: white;
+	text-decoration: none;
   	position: absolute;
   	bottom: 5%;
   	right: 10%;
 	padding: 10px;
   	background-color: rgba(0,0,0,0.5)
+}
+
+.caption:hover {
+	font-weight: bold;
 }
 
 /* Fading animation */
