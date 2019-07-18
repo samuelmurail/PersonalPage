@@ -104,18 +104,18 @@ img{
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 2.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: .5}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .5}
   to {opacity: 1}
 }
 
@@ -123,8 +123,11 @@ img{
 .name{
   	position: absolute;
   	top: 5%;
-  	left: 5%;
+  	left: 10%;
+  	max-width: 80%;
+  	padding-left: 10px;
 	font-size: 3rem;
+	text-justify: none;
   	//width: intrinsic;           /* Safari/WebKit utilisent un nom non-standard */
   	//width: -moz-max-content;    /* Firefox/Gecko */
   	//width: -webkit-max-content; /* Chrome */	
@@ -135,6 +138,7 @@ img{
 }
 
 .description{
+	text-justify: none;
 	margin-top: 20px;
   	//width: intrinsic;           /* Safari/WebKit utilisent un nom non-standard */
   	//width: -moz-max-content;    /* Firefox/Gecko */
