@@ -1,11 +1,15 @@
 body
 {
-  font-weight: 300;
-  font-size: 1em;
-  line-height: 2;
-  font-family: "Roboto", Arial, sans-serif;
-  color: #666666;
-  background: #fff;
+	font-family: "Roboto", Arial, sans-serif;
+	color: #666666;
+	background: #fff;
+	text-align: justify;
+	margin: 0;
+}
+
+div.page{
+	margin: 0;
+	padding: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6, figure
@@ -15,46 +19,23 @@ h1, h2, h3, h4, h5, h6, figure
   margin: 0 0 20px 0; 
 }
 
-a 
+/*a 
 {
 	color: black;
 	text-decoration: none;
-
-	a:hover, a:active, a:focus {
+	a:active, a:focus {
 		color: ##000080;
 		outline: none;
 		text-decoration: none; 
 	}
 }
+*/
 
-p {
-	margin-bottom: 20px; 
-}
-
-nav
-{
-	margin-top: 450px;
-	right: 0;
-	left: 0;
-	top: 0;
-	position: sticky;
-	border-bottom: 1px solid gray;
-	display: flex;
-	max-width: 800px;
-	padding: 10px 15 px;
-	margin: 0 auto;
-	background-color: white;
-}
-
+/* Title */
 header{
-	top: 0px;
-	position: relative;
-	height: 400px;
+	height: 800px;
 	max-width: 1250px;
-	border: 1px solid;
-	background-color: orange;
 	color: white;
-	font-size: 2em;
 	margin: 0 auto;
 	background-image: url('../images/SHC8.jpg');
 	//background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,1)), url('../images/SHC8.jpg');
@@ -62,80 +43,88 @@ header{
 }
 
 .name{
-  	width: intrinsic;           /* Safari/WebKit utilisent un nom non-standard */
-  	width: -moz-max-content;    /* Firefox/Gecko */
-  	width: -webkit-max-content; /* Chrome */	
-  	padding-top: 0px;
-  	padding-left: 10px;
-  	padding-right: 10px;
-	margin-top: 50px;
-	margin-left: 50px;
+  	//width: intrinsic;           /* Safari/WebKit utilisent un nom non-standard */
+  	//width: -moz-max-content;    /* Firefox/Gecko */
+  	//width: -webkit-max-content; /* Chrome */	
+	position: -webkit-sticky;
+	position: sticky;
 	background-color: rgba(0,0,0,0.5);
 	font-family: "Times New Roman", Georgia, serif;
 }
 
-.lastname{
-  	text-transform: uppercase;
-	font-weight: bold; 
-}
-
 .description{
-  	padding-left: 5px;
-	margin-top: 30px;
-  	margin-left: 50px;
-  	width: intrinsic;           /* Safari/WebKit utilisent un nom non-standard */
-  	width: -moz-max-content;    /* Firefox/Gecko */
-  	width: -webkit-max-content; /* Chrome */	
+	top: 10px;
+  	//width: intrinsic;           /* Safari/WebKit utilisent un nom non-standard */
+  	//width: -moz-max-content;    /* Firefox/Gecko */
+  	//width: -webkit-max-content; /* Chrome */	
 	font-size: 2rem;
-	//font-style: italic; 
 	color:black;
 	line-height:2rem;
-	background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0.5));
+	//background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0.5));
 }
 
 
+/* Menu organisation */
+nav
+{
+	top: 0; /* Needed with sticky ? */
+	position: -webkit-sticky; /* To be always visible */
+	position: sticky;		  /* To be always visible */
+	border-bottom: 2px solid gray;
+	max-width: 800px;
+	margin: 0 auto;
+	background-color: white;
+}
 
 ul.menu {
-	width:100%;
-	list-style-type: none;
+	list-style-type: none; /* Remove bullet*/
  	margin: 0;
- 	padding: 0;
- 	overflow: hidden;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
+
 li.menu {
-	//float: left;
 	flex-grow:1;
-  	padding: 14px 16px;
+  	padding: 14px 5px;
+}
+
+a.menu{
   	text-transform: uppercase;
-}
-li.menu:hover{
-	color: red;
-	font-weight: bold;
+  	color: black;
+	text-decoration: none;
 }
 
+a.menu:hover{
+	color: purple;
+}
+
+/*Main page*/
 .main{
-	padding: 10px 15px;
-	padding-top: 50px;
+	padding: 50px 10px 50px 10px;
 	margin: 0 auto;
 	max-width: 800px;
 }
 
+/*Footer*/
 footer{
-	background-color: rgba(240,248,255, 0.4);
-	max-width: 800px;
-	padding: 10px 15 px;
+	height: 50px;
+	background-color: rgba(240,248,255, 0.6);
 	margin: 0 auto;
-	padding-left: 100px;
 	clear: both;
+	max-width: 800px;
+	display: block;
 }
 
-// Publication PART :
+.in_footer{
+	padding-top: 20px;
+	text-align: center;
+}
 
+/* Publication PART :*/
 li.pub{
-	margin: 400px 40px;
+	margin: 10px 40px;
 }
 
 .title{
@@ -146,7 +135,7 @@ li.pub{
 	color: #000080; /* dark blue */
 	/*border: solid 1px;*/
 	padding: 0;
-	line-height: 1.5rem;
+	line-height: 1.2rem;
 }
 
 .authors{
@@ -156,7 +145,7 @@ li.pub{
 	font-style: italic; 
 	color:	dimgray;
 	padding: 0;
-	line-height: 1.4rem;
+	line-height: 1.2rem;
 }
 
 .journal{
@@ -165,7 +154,7 @@ li.pub{
 	font-style: italic; 
 	color:	black;
 	padding: 0;
-	line-height: 1.2rem;
+	line-height: 1.0rem;
 }
 
 .strong{
@@ -177,6 +166,7 @@ li.pub{
 	float: left;
 }
 
+/* aside box for contact*/
 aside{
 	padding-top: 0;
 	padding-left: 20px;
@@ -190,7 +180,7 @@ aside{
 	padding-left: 100px;
 }
 
-
+/* iframe for Open Street Map*/
 iframe{
 	margin: 20px;
 	width: 90%;
