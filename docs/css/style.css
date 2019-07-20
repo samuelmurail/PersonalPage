@@ -9,7 +9,7 @@ body
 
 div.page{
 	margin: 0;
-	padding: 0 auto;
+	//padding: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6, figure
@@ -191,6 +191,7 @@ a.menu:hover{
 	padding: 50px 10px 50px 10px;
 	margin: 0 auto;
 	max-width: 800px;
+	font-style: normal; 
 }
 
 /*Footer*/
@@ -206,6 +207,50 @@ footer{
 .in_footer{
 	padding-top: 20px;
 	text-align: center;
+}
+
+/* CV Part */
+.position{
+	font-family: "Times New Roman", Georgia, serif;
+	//margin-top: 1rem;
+	font-weight: big; 
+	//font-size: 1.0rem;
+	color: #000080; /* dark blue */
+	/*border: solid 1px;*/
+	//padding: 0;
+	//line-height: 1.2rem;
+}
+
+ul.CV{
+	  list-style-type: circle;
+}
+
+li.CV{
+	margin-left: 20px;
+	font-family: "Times New Roman", Georgia, serif;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 80%;
+}
+
+.date {
+	display: flex;
+	font-style: italic; 
+	inline-size: 100px;
+}
+.position {
+	display: flex;
+	inline-size: 150px;
+}
+
+.place{
+	inline-size: 200px;
+}
+
+.CV_descr{
+	padding-left: 100px;
+	margin-bottom: 20px;
 }
 
 /* Publication PART :*/
