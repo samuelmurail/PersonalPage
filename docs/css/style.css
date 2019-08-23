@@ -162,8 +162,9 @@ nav
 	background-color: white;
 }
 
+/*
 ul.menu {
-	list-style-type: none; /* Remove bullet*/
+	list-style-type: none; 
  	margin: 0;
 	display: flex;
 	flex-direction: row;
@@ -185,6 +186,8 @@ a.menu{
 a.menu:hover{
 	color: purple;
 }
+
+*/
 
 /*Main page*/
 .main{

@@ -6,10 +6,22 @@
         <title>
             Home | Samue Murail
         </title>
-        <meta name='Samuel Murail' content='Personal Page' charset="utf-8"/>
+        <meta name='Samuel Murail' content='Personal Page'/>
 
         <!-- Theme style  -->
         <link rel="stylesheet" href="css/style.css">
+
+        
+        <!-- MATERIALIZE https://materializecss.com/ -->
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!--Import materialize.css-->
+        <link rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     </head>
 
     <body>
@@ -43,16 +55,34 @@
                     <script type="text/javascript" src='js/diapo.js'></script>
                 </div>  
             </header>
-            <nav class='menu_header'>
-                <ul class='menu'>
-                    <li class='menu'><a class='menu' href="index.html">Home</a></li>
-                    <li class='menu'><a class='menu' href="research.html">Research</a></li>
-                    <li class='menu'><a class='menu' href="publications.html">Publications</a></li>
-                    <li class='menu'><a class='menu' href="congress.html">Congress</a></li>
-                    <li class='menu'><a class='menu' href="teaching.html">Teaching</a></li>
-                    <li class='menu'><a class='menu' href="contact.html">Contact</a></li>
-                </ul>
+
+            <nav >
+                <div class='nav-wrapper'>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+                    <ul class='menu hide-on-med-and-down'>
+                        <li class='menu'><a class='menu' href="index.html">Home</a></li>
+                        <li class='menu'><a class='menu' href="research.html">Research</a></li>
+                        <li class='menu'><a class='menu' href="publications.html">Publications</a></li>
+                        <li class='menu'><a class='menu' href="congress.html">Congress</a></li>
+                        <li class='menu'><a class='menu' href="teaching.html">Teaching</a></li>
+                        <li class='menu'><a class='menu' href="contact.html">Contact</a></li>
+                    </ul>
+    
+                </div>
+
             </nav>
+
+            <ul class="sidenav" id="mobile-demo">
+                <li class='menu'><a class='menu' href="index.html">Home</a></li>
+                <li class='menu'><a class='menu' href="research.html">Research</a></li>
+                <li class='menu'><a class='menu' href="publications.html">Publications</a></li>
+                <li class='menu'><a class='menu' href="congress.html">Congress</a></li>
+                <li class='menu'><a class='menu' href="teaching.html">Teaching</a></li>
+                <li class='menu'><a class='menu' href="contact.html">Contact</a></li>
+            </ul>
+
+
             <div id='pub' class='main'>
                 <h1>Oral Communications:</h1>
                 <ol class='pub' reversed>
@@ -280,5 +310,11 @@
                 </div>
             </footer>
         </div>
+
+        <!-- Sidenva Menu -->
+        <script src='js/sidenav.js'></script>
+        <!--JavaScript at end of body for optimized loading -->
+        <script src="js/materialize.min.js"></script>
+
     </body>
 </html>
