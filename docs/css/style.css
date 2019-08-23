@@ -156,7 +156,7 @@ nav{
 	position: -webkit-sticky; /* To be always visible */
 	position: sticky;		  /* To be always visible */
 	border-bottom: 2px solid gray;
-	max-width: 800px;
+	max-width: 650px;
 	margin: 0 auto;
 }
 
