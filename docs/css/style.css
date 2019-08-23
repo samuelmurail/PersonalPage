@@ -151,16 +151,26 @@ img{
 
 
 /* Menu organisation */
-nav
-{
+nav{
 	top: 0; /* Needed with sticky ? */
 	position: -webkit-sticky; /* To be always visible */
 	position: sticky;		  /* To be always visible */
 	border-bottom: 2px solid gray;
 	max-width: 800px;
 	margin: 0 auto;
+}
+
+div.nav-wrapper{
 	background-color: white;
 }
+
+
+a.menu{
+  	text-transform: uppercase;
+  	color: black;
+	text-decoration: none;
+}
+
 
 /*
 ul.menu {
