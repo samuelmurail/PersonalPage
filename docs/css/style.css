@@ -41,6 +41,14 @@ header{
 	//background-position: center; 
 }
 
+li.subdescription{
+	padding-left: 20px;
+	list-style-position: inside;
+	font-size: 1.5rem;
+	font-style: italic; 
+}
+
+
 /* Slideshow container */
 .slideshow-container {
   	/*max-width: 1000px;*/
@@ -156,7 +164,7 @@ nav{
 	position: -webkit-sticky; /* To be always visible */
 	position: sticky;		  /* To be always visible */
 	border-bottom: 2px solid gray;
-	max-width: 650px;
+	max-width: 700px;
 	margin: 0 auto;
 }
 
