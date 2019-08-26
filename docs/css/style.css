@@ -275,6 +275,11 @@ strong{
 	font-weight: bold !important; 
 }
 
+.strong{
+    font-weight: bold !important; 
+}
+
+
 .left{
 	min-width: 70%;
 	float: left;
