@@ -203,6 +203,10 @@ footer{
 	//line-height: 1.2rem;
 }
 
+.CV{
+    font-size: 1.4rem;
+}
+
 ul.CV{
 	  list-style-type: circle;
 }
@@ -219,15 +223,19 @@ li.CV{
 .date {
 	display: flex;
 	font-style: italic; 
-	inline-size: 100px;
+	inline-size: 130px;
 }
 .position {
+    padding-left: 20px;
 	display: flex;
-	inline-size: 150px;
+	inline-size: 220px;
 }
 
 .place{
-	inline-size: 200px;
+    padding-left: 20px;
+	inline-size: 290px;
+    font-weight: bold;
+    color: #000080; /* dark blue */
 }
 
 .CV_descr{
@@ -276,7 +284,7 @@ strong{
 }
 
 .strong{
-    font-weight: bold !important; 
+    font-weight: bold; 
 }
 
 
@@ -286,8 +294,9 @@ strong{
 }
 
 .contact_content{
-	line-height: 2rem;
+	line-height: 1.6rem;
 	padding-left: 100px;
+    font-size: 1.2rem;
 }
 
 /* iframe for Open Street Map*/
