@@ -215,6 +215,12 @@ a.menu:hover{
 	font-style: normal; 
 }
 
+.side{
+	padding-top: 60px;
+	margin: 0 auto;
+	font-style: normal; 
+}
+
 /*Footer*/
 footer{
 	height: 50px;
@@ -316,15 +322,6 @@ li.pub{
 .left{
 	min-width: 70%;
 	float: left;
-}
-
-/* aside box for contact*/
-aside{
-	padding-top: 0;
-	padding-left: 20px;
-	min-width: 200px;
-	float: right;
-	background-color: rgba(240, 240, 240, 0.6);
 }
 
 .contact_content{
