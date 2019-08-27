@@ -119,25 +119,14 @@ img{
   	padding-left: 10px;
 	font-size: 3rem;
 	text-justify: none;
-  	//width: intrinsic;           /* Safari/WebKit utilisent un nom non-standard */
-  	//width: -moz-max-content;    /* Firefox/Gecko */
-  	//width: -webkit-max-content; /* Chrome */	
-	//position: -webkit-sticky;
-	//position: sticky;
 	background-color: rgba(0,0,0,0.5);
-	//font-family: "Times New Roman", Georgia, serif;
 }
 
 .description{
 	text-justify: none;
 	margin-top: 20px;
-  	//width: intrinsic;           /* Safari/WebKit utilisent un nom non-standard */
-  	//width: -moz-max-content;    /* Firefox/Gecko */
-  	//width: -webkit-max-content; /* Chrome */	
 	font-size: 2rem;
-	//color:black;
 	line-height:2rem;
-	//background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0.5));
 }
 
 
@@ -155,13 +144,11 @@ div.nav-wrapper{
 	background-color: white;
 }
 
-
 a.menu{
   	text-transform: uppercase;
   	color: black;
 	text-decoration: none;
 }
-
 
 
 /*Main page*/
@@ -178,6 +165,7 @@ a.menu{
 	font-style: normal; 
 }
 
+
 /*Footer*/
 footer{
 	height: 50px;
@@ -193,14 +181,10 @@ footer{
 	text-align: center;
 }
 
+
 /* CV Part */
 .position{
-	/*font-family: "Times New Roman", Georgia, serif;*/
-	/*font-size: 1.0rem;*/
 	color: #000080; /* dark blue */
-	/*border: solid 1px;*/
-	//padding: 0;
-	//line-height: 1.2rem;
 }
 
 .CV{
@@ -213,11 +197,9 @@ ul.CV{
 
 li.CV{
 	margin-left: 20px;
-	/*font-family: "Times New Roman", Georgia, serif;*/
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	width: 80%;
 }
 
 .date {
@@ -243,41 +225,39 @@ li.CV{
 	margin-bottom: 20px;
 }
 
-/* Publication PART :
+
+/*Pub Part*/
 li.pub{
-	margin: 10px 40px;
+	max-width: 1200px;
 }
-*/
 
 .title{
 	font-family: "Times New Roman", Georgia, serif;
 	margin-top: 1rem;
 	font-weight: big; 
-	font-size: 1.2rem;
 	color: #000080; /* dark blue */
-	/*border: solid 1px;*/
 	padding: 0;
-	line-height: 1.2rem;
+	line-height: 2rem;
 }
 
 .authors{
 	font-family: "Times New Roman", Georgia, serif;
 	font-weight: normal; 
-	font-size: 0.8rem;
 	font-style: italic; 
 	color:	dimgray;
 	padding: 0;
-	line-height: 1.2rem;
+	line-height: 2rem;
 }
 
 .journal{
-	font-size: 0.8rem;
 	font-weight: bold; 
 	font-style: italic; 
 	color:	black;
 	padding: 0;
-	line-height: 1.0rem;
+	line-height: 1.6rem;
 }
+
+
 
 strong{
 	font-weight: bold !important; 
@@ -305,3 +285,4 @@ iframe{
 	width: 90%;
 	height: 300px;
 }
+
