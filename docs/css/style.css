@@ -289,3 +289,8 @@ iframe{
 figcaption{
  	text-align: center;
 }
+
+li.collaborators{
+	list-style-type: disc !important;
+	margin-left: 30px;
+}
