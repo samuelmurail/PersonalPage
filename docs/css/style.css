@@ -228,7 +228,7 @@ li.CV{
 
 /*Pub Part*/
 li.pub{
-	max-width: 1200px;
+	/*max-width: 1200px;*/
 }
 
 .title{
@@ -291,6 +291,11 @@ figcaption{
 }
 
 li.collaborators{
+	list-style-type: disc !important;
+	margin-left: 30px;
+}
+
+li.bullet{
 	list-style-type: disc !important;
 	margin-left: 30px;
 }
