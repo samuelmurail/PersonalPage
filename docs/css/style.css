@@ -203,25 +203,18 @@ li.CV{
 }
 
 .date {
-	display: flex;
 	font-style: italic; 
-	inline-size: 130px;
 }
 .position {
-    padding-left: 20px;
 	display: flex;
-	inline-size: 220px;
 }
 
 .place{
-    padding-left: 20px;
-	inline-size: 290px;
     font-weight: bold;
     color: #000080; /* dark blue */
 }
 
 .CV_descr{
-	//padding-left: 100px;
 	margin-bottom: 20px;
 }
 
