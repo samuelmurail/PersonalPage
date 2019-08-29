@@ -3,10 +3,10 @@
 
 ## Quick install
 
-Get the *Samuel Murail Web Page* from [github](https://github.com/samuelmurail/PersonnalPage).
+Get the *Samuel Murail Web Page* from [github](https://github.com/samuelmurail/PersonalPage).
 
 ```bash
-git clone https://github.com/samuelmurail/PersonnalPage.git
+git clone https://github.com/samuelmurail/PersonalPage.git
 ```
 
-Visit the site at thi [url](https://samuelmurail.github.io/PersonnalPage/).
+Visit the site at thi [url](https://samuelmurail.github.io/PersonalPage/).
