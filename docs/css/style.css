@@ -188,22 +188,15 @@ footer{
 }
 
 .CV{
+    padding-left:0;
     font-size: 1.4rem;
 }
 
-ul.CV{
-	  list-style-type: circle;
-}
-
-li.CV{
-	margin-left: 20px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
 
 .date {
 	font-style: italic; 
+    padding-left:0px !important;
+
 }
 .position {
 	display: flex;
@@ -216,6 +209,10 @@ li.CV{
 
 .CV_descr{
 	margin-bottom: 20px;
+}
+
+.no-padding-left{
+    padding-left:0px !important;
 }
 
 
