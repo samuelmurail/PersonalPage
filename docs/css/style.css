@@ -221,7 +221,13 @@ li.CV{
 
 /*Pub Part*/
 li.pub{
+    padding-left:0;
 	/*max-width: 1200px;*/
+}
+
+ol.pub{
+    padding-left:0;
+    /*max-width: 1200px;*/
 }
 
 .title{
