@@ -1,3 +1,8 @@
+
+*{
+	margin: 0;
+}
+
 body
 {
 	font-family: "Roboto", Arial, sans-serif;
@@ -135,21 +140,78 @@ nav{
 	top: 0; /* Needed with sticky ? */
 	position: -webkit-sticky; /* To be always visible */
 	position: sticky;		  /* To be always visible */
-	border-bottom: 2px solid gray;
-	max-width: 700px;
+	/*border-bottom: 2px solid gray;*/
+	max-width: 800px;
 	margin: 0 auto;
+	z-index: 100; /* To put it in front*/
+}
+
+nav ul li.active {
 }
 
 div.nav-wrapper{
 	background-color: white;
 }
 
+ul.menu {
+}
+
+li.menu{
+	width: 16.666%;
+  	text-align: center;	
+  	background-color: white;
+}
+
 a.menu{
   	text-transform: uppercase;
   	color: black;
 	text-decoration: none;
+  	width: 100%;
 }
 
+li a.menu:hover{
+	background-color: white;
+}
+
+li.active a:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+hr.menu {
+	width: 16.666%;
+	height: 8px;
+	/*background: linear-gradient(rgb(0, 0, 0, 0), rgb(84, 110, 122, 0.5) 70%, rgb(84, 110, 122, 1.0));*/
+	background: rgb(84, 110, 122, 1.0);
+	border: 0;
+	position: absolute;
+	bottom: 0px;
+	transition: .6s ease-in-out;
+	pointer-events: none;
+}
+
+li.nav1:hover ~ hr{
+	margin-left: 0;
+}
+
+li.nav2:hover ~ hr{
+	margin-left: 16.666%;
+}
+
+li.nav3:hover ~ hr{
+	margin-left: 33.333%;
+}
+
+li.nav4:hover ~ hr{
+	margin-left: 50%;
+}
+
+li.nav5:hover ~ hr{
+	margin-left: 66.666%;
+}
+
+li.nav6:hover ~ hr{
+	margin-left: 83.333%;
+}
 
 /*Main page*/
 .main{
@@ -157,6 +219,7 @@ a.menu{
 	margin: 0 auto;
 	max-width: 800px;
 	font-style: normal; 
+	position: relative;
 }
 
 .side{
