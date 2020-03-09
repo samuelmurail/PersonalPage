@@ -141,7 +141,7 @@ nav{
 	position: -webkit-sticky; /* To be always visible */
 	position: sticky;		  /* To be always visible */
 	/*border-bottom: 2px solid gray;*/
-	max-width: 800px;
+	max-width: 1000px;
 	margin: 0 auto;
 	z-index: 100; /* To put it in front*/
 }
@@ -176,6 +176,8 @@ li a.menu:hover{
 li.active a:hover {
 	background-color: rgba(0,0,0,0.1);
 }
+
+/* For dynamic nav underline */
 
 hr.menu {
 	width: 16.666%;
@@ -213,11 +215,26 @@ li.nav6:hover ~ hr{
 	margin-left: 83.333%;
 }
 
+/* Side Nav */
+
+ul.sidenav{
+	max-width: 200px; 
+}
+
+ul.sidenav li.menu{
+	width: 100%;
+}
+
+ul.sidenav li.menu a:hover{
+	width: 100%;
+	background-color: rgba(0,0,0,0.1);
+}
+
 /*Main page*/
 .main{
 	padding: 50px 10px 50px 10px;
 	margin: 0 auto;
-	max-width: 800px;
+	max-width: 1000px;
 	font-style: normal; 
 	position: relative;
 }
@@ -284,6 +301,11 @@ li.pub{
     padding-left:0;
 	/*max-width: 1200px;*/
 }
+
+div.title:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
 
 ol.pub{
     padding-left:0;
