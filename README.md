@@ -9,4 +9,4 @@ Get the *Samuel Murail Web Page* from [github](https://github.com/samuelmurail/P
 git clone https://github.com/samuelmurail/PersonalPage.git
 ```
 
-Visit the site at thi [url](https://samuelmurail.github.io/PersonalPage/).
+Visit the site at this [url](https://samuelmurail.github.io/PersonalPage/).
