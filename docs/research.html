@@ -96,8 +96,93 @@
 				<li class='menu'><a class='menu' href="contact.html">Contact</a></li>
   			</ul>
 
-
 			<div id='research' class='main container flow-text'>
+
+				<p>  I was appointed associated professor in 2017 at Université Paris Diderot in the CMPLI laboratory. Since my appointment,
+					I have initiated a research project focusing on predicting the structures of protein-peptide complexes using my solid
+					skills in in silico approaches, and in particular the simulation of protein-ligand interactions, data analysis and modelling.
+				  </p>
+				  <p>
+					Since 2020-2021 and the publication of the Alphafold 2 programme, structural bioinformatics approaches have been transformed.
+					A major part of my research has involved integrating this revolution into my research, and several research projects have
+					had to be radically reoriented. Alphafold and its derivatives have been integrated into the RPBS platform on a regular
+					basis, both technically (software installation) and in terms of calls for tenders (AAP Idex ‘Gros Equipements’ GPU-APB, 144 k€, 2022)
+					or services and collaboration (projects underway with a team from the Gustave Roussy Institute and a team from I-STEM).
+				  </p>
+					These collaborations with experimental teams are particularly important to me. In the course of my research, 21 of the 30
+					articles published in peer-reviewed journals (including JACS, Science Advances, Structure, EMBO J, 3 PNAS and 4 NAR)
+					have been produced in collaboration with experimentalists; for 18 of these articles I am the main author of the
+					simulation/modelling part and corresponding author for 3 publications.
+				  </p>
+	  
+				  <h2 id='software'>Open Source software</h2>
+				  <p>
+  
+					  Since joining CMPLI and RPBS, I have developed several open-source python libraries to
+					  make Gromacs molecular dynamics simulation tools and several molecular docking tools such
+					  as Autodock and Vina more accessible to non-specialists.
+				  </p>
+				  <p>
+					  I also developed a python library to manipulate coordinate files and analyze AlphaFold results.
+				  </p>
+  
+				  <ol class='pub container'>
+  
+					  <li class='pub'>
+						  <div class='title'>
+							  <a class='title' href="https://gromacs-py.readthedocs.io/en/stable/">Gromacs_py, a gromacs python wrapper.</a>
+						  </div>
+						  <div class='journal'>
+							  <a href="https://pepy.tech/project/gromacs-py" rel="nofollow"><img alt="https://static.pepy.tech/personalized-badge/gromacs-py?period=total&amp;units=international_system&amp;left_color=black&amp;right_color=orange&amp;left_text=Downloads" src="https://camo.githubusercontent.com/a4d9a219fcea0323febd3eebf7401888cb48560988ce9b87577aaf44d1c55331/68747470733a2f2f7374617469632e706570792e746563682f706572736f6e616c697a65642d62616467652f67726f6d6163732d70793f706572696f643d746f74616c26756e6974733d696e7465726e6174696f6e616c5f73797374656d266c6566745f636f6c6f723d626c61636b2672696768745f636f6c6f723d6f72616e6765266c6566745f746578743d446f776e6c6f616473" data-canonical-src="https://static.pepy.tech/personalized-badge/gromacs-py?period=total&amp;units=international_system&amp;left_color=black&amp;right_color=orange&amp;left_text=Downloads" style="max-width: 100%;"></a>						</div>   
+					  </li>
+					  <li class='pub'>
+						  <div class='title'>
+							  <a class='title' href="https://docking-py.readthedocs.io/en/latest/readme.html">Docking_py, a python library for ligand protein docking.</a>
+						  </div>
+						  <div class='journal'>
+							  <a href="https://pepy.tech/projects/docking-py"><img src="https://static.pepy.tech/badge/docking-py" alt="PyPI Downloads"></a>							</a> 
+						  </div>   
+					  </li>
+					  <li class='pub'>
+						  <div class='title'>
+							  <a class='title' href="https://pdb-manip-py.readthedocs.io/en/latest/readme.html">Pdb_manip_py, a python library allowing manipulation on three-dimensional
+								  structures files (eg pdb files).</a>
+						  </div>
+						  <div class='journal'>
+							  <a class="reference external image-reference" href="https://pepy.tech/projects/pdb-manip-py"><img alt="https://static.pepy.tech/badge/pdb-manip-py" src="https://static.pepy.tech/badge/pdb-manip-py"></a>						</div>   
+					  </li>
+					  <li class='pub'>
+						  <div class='title'>
+							  <a class='title' href="https://af-analysis.readthedocs.io/en/latest/readme.html">Alphafold Analysis, is a python package for the analysis of AlphaFold protein structure predictions.</a>
+						  </div>
+						  <div class='journal'>
+							  <a href="https://pepy.tech/project/af2-analysis" rel="nofollow"><img src="https://camo.githubusercontent.com/f793cac18c717b944d6380b847f2cc93431a81381d7e88ed47bdddb5b92b5eec/68747470733a2f2f7374617469632e706570792e746563682f62616467652f6166322d616e616c79736973" alt="Downloads" data-canonical-src="https://static.pepy.tech/badge/af2-analysis" style="max-width: 100%;"></a>						</div>   
+					  </li>
+					  <li class='pub'>
+						  <div class='title'>
+							  <a class='title' href="https://pdb-numpy.readthedocs.io/en/latest/readme.html">Pdb_numpy, is a python library designed to facilitate working with PDB files in the context of structural bioinformatics.</a>
+						  </div>
+						  <div class='journal'>
+							  <a class="reference external image-reference" href="https://pepy.tech/project/pdb-numpy"><img alt="Downloads" src="https://static.pepy.tech/badge/pdb-numpy">
+							  </a> 
+						  </div>   
+					  </li>
+				  </ol>
+  
+				  <h2 id='webservice'>Web services</h2>
+				  <p>
+					Online web service Since my arrival on the RPBS platform, I have become familiar with putting web services online.
+					In 2021 I developed the SeamDock online service (deployed on the RPBS platform :
+					<a href="https://bioserv.rpbs.univ-paris-diderot.fr/services/SeamDock/">https://bioserv.rpbs.univ-paris-diderot.fr/services/SeamDock/</a>), which integrates various molecular docking tools into
+					a common framework and enables global and/or local docking of ligands to a receptor. This tool can be used in
+					collaborative mode with partners from all over the world or in a classroom focusing on docking methods or
+					receptor-ligand interactions, while ignoring software installation and Unix command lines.
+				</p>
+				<figure>
+					<img class='research' src="images/seamdock.png" alt='SeamDock'>
+					<figcaption>Seamdock interface</figcaption>
+				</figure>
+
 				<h2 id='peptide'>Protein-Peptide Interactions</h2>
 				<p>
 					Proteins play a key role in almost all cellular functions. These macromolecules rarely act in isolation, but within complex interaction networks. Recent methods of characterizing protein-protein interactions (PPI) have made it possible to obtain high-throughput data on these interaction networks. These protein-protein interactions act usually via large interfaces (1500-3000 Å<sup>2</sup>) with no well-defined binding pocket.<br>
@@ -112,6 +197,8 @@
 					To tackle the challenges of peptide-protein interactions we use <strong>extensive molecular dynamic (MD) simulation</strong> of multiple peptide fragments with target proteins, and thus propose a breakthrough to overcome the major limitations of current approaches.<br> 
 					By using high precision physics-based approach, I intend to (<em>i</em>) identify peptide binding sites and especially key hotspots (<em>ii</em>) characterize hot spots peptide sequence specificity (<em>iii</em>) fold a target peptide in the best ranked binding sites and ultimately (<em>iv</em>) optimize the peptide sequence or predict de novo optimal peptide composition. 
 				</p>
+
+
 				<h2 id='gromacs_py'>Gromacs_py</h2>
 				<p>
 					<a href="https://gromacs-py.readthedocs.io/en/latest/#">Gromacs_py</a> is an open source python library allowing a simplified use of the gromacs MD simulation software. Gromacs_py can build topologie based on a pdb file, create the simulation system (box, add water and ions) and run minimisation, equilibration and production. One of the main objective of the gromacs_py wrapper is to automatize routine operations for MD simulation of multiple systems.
